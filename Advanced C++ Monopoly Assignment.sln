@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Advanced C++ Monopoly Assignment", "Advanced C++ Monopoly Assignment\Advanced C++ Monopoly Assignment.vcxproj", "{6E5A37F8-566F-4DBF-BC3D-6111FFC423C6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "playersll", "playersll\playersll.vcxproj", "{4906A080-AE74-462F-B74F-BDCC120F16DB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "squaresll", "squaresll\squaresll.vcxproj", "{C49DC7FE-7F1A-46B5-AE0B-13171B87BD5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +17,14 @@ Global
 		{6E5A37F8-566F-4DBF-BC3D-6111FFC423C6}.Debug|Win32.Build.0 = Debug|Win32
 		{6E5A37F8-566F-4DBF-BC3D-6111FFC423C6}.Release|Win32.ActiveCfg = Release|Win32
 		{6E5A37F8-566F-4DBF-BC3D-6111FFC423C6}.Release|Win32.Build.0 = Release|Win32
+		{4906A080-AE74-462F-B74F-BDCC120F16DB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4906A080-AE74-462F-B74F-BDCC120F16DB}.Debug|Win32.Build.0 = Debug|Win32
+		{4906A080-AE74-462F-B74F-BDCC120F16DB}.Release|Win32.ActiveCfg = Release|Win32
+		{4906A080-AE74-462F-B74F-BDCC120F16DB}.Release|Win32.Build.0 = Release|Win32
+		{C49DC7FE-7F1A-46B5-AE0B-13171B87BD5F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C49DC7FE-7F1A-46B5-AE0B-13171B87BD5F}.Debug|Win32.Build.0 = Debug|Win32
+		{C49DC7FE-7F1A-46B5-AE0B-13171B87BD5F}.Release|Win32.ActiveCfg = Release|Win32
+		{C49DC7FE-7F1A-46B5-AE0B-13171B87BD5F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

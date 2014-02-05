@@ -5,7 +5,6 @@
 
 const char POUND = 156;
 
-
 int _tmain(int argc, _TCHAR* argv[])
 {
 	return 0;
