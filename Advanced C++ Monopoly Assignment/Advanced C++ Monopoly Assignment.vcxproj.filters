@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Square">
+      <UniqueIdentifier>{a4ef58c4-d28c-4c34-bab3-421997ec8343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Square">
+      <UniqueIdentifier>{ba58350a-37c8-4156-8ded-0c19de17e74b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Player">
+      <UniqueIdentifier>{f9baf729-1481-49eb-8dd8-a556db5f2a70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player">
+      <UniqueIdentifier>{696abbcf-18ef-4e54-b3e4-85bb5ae544c9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -24,8 +36,11 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\squaresll\square.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Square.h">
+      <Filter>Header Files\Square</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Player</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -34,6 +49,12 @@
     </ClCompile>
     <ClCompile Include="Advanced C++ Monopoly Assignment.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Square.cpp">
+      <Filter>Source Files\Square</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Player</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
