@@ -1,8 +1,8 @@
 #include "stdafx.h"
 #include "Square.h"
 
-
-void CSquare::setName(string name)
+CSquare::CSquare(string posName)
 {
-	this->posName = name;
+	this->mPosName = posName;
 }
+

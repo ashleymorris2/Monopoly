@@ -25,6 +25,9 @@
     <Filter Include="Source Files\Player">
       <UniqueIdentifier>{696abbcf-18ef-4e54-b3e4-85bb5ae544c9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Monopoly">
+      <UniqueIdentifier>{4e359721-9667-4ee8-b09f-df2419a890dc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -42,12 +45,15 @@
     <ClInclude Include="Player.h">
       <Filter>Header Files\Player</Filter>
     </ClInclude>
+    <ClInclude Include="Property.h">
+      <Filter>Header Files\Square</Filter>
+    </ClInclude>
+    <ClInclude Include="Monopoly.h">
+      <Filter>Header Files\Monopoly</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Advanced C++ Monopoly Assignment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Square.cpp">
@@ -55,6 +61,12 @@
     </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Advanced C++ Monopoly Assignment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Property.cpp">
+      <Filter>Source Files\Square</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -5,26 +5,19 @@
 #include <iostream>
 #include <string>
 
+#include "Player.h"
 
 using namespace std;
 
 class CSquare
 {
-private:
-	
-	string posName;//The square name
-
-	/* for property class
-	int cost; //cost to buy the property
-	int rent; 
-	int colourGroup; // colour group that the property belongs to
-	*/
+private:	
+	string mPosName;//The square name.
 
 public:
-	void setName(string name);
-
-	//CSquare(string name);
-		//int cost, int rent, int colourGroup);
+	CSquare (string posName);//Constructor
+	//virtual void TakeTurn(CPlayer * player);
+	string GetName();
 };
 
 #endif
