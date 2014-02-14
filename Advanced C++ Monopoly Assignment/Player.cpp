@@ -9,3 +9,8 @@ CPlayer::CPlayer(string pieceName, int playerNum){
 	this->currentBalance = 1500;
 	this->location = 0;
 }
+string CPlayer::GetPlayerName(){
+
+	return pieceName;
+
+}

@@ -3,21 +3,26 @@
 #pragma once
 
 #include <string>
+#include <vector>
+#include <fstream>
+
 #include "Square.h"
 #include "Player.h"
+#include "Property.h"
 
-class CProperty :public CSquare
+const char PND = 156;
+string  myName (string  name1, string  name2);
+
+class CMonopoly 
 {
-
 private:
-	int cost; 
-	int rent; 
-	int colourGroup; 
-	int owner; // 0 if not owned
-
+	vector <CSquare*> theBoard;
+	CPlayer * player1;
+	CPlayer * player2;
+	
 public:
-	CProperty(string posName, int cost, int rent, int colourGroup);
-	//virtual void TakeTurn(CPlayer * player);
+	CMonopoly();
+	void PlayRound();
+	~CMonopoly();
 };
-
 #endif

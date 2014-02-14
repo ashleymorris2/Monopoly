@@ -8,7 +8,6 @@
 
 class CProperty :public CSquare
 {
-
 private:
 	int cost; 
 	int rent; 

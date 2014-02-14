@@ -28,6 +28,9 @@
     <Filter Include="Header Files\Monopoly">
       <UniqueIdentifier>{4e359721-9667-4ee8-b09f-df2419a890dc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Monopoly">
+      <UniqueIdentifier>{0ad7a646-4802-44b5-a7f3-fe35dcd33c7e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -64,6 +67,9 @@
     </ClCompile>
     <ClCompile Include="Advanced C++ Monopoly Assignment.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Monopoly.cpp">
+      <Filter>Source Files\Monopoly</Filter>
     </ClCompile>
     <ClCompile Include="Property.cpp">
       <Filter>Source Files\Square</Filter>

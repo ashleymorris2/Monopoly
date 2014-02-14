@@ -17,6 +17,16 @@ private:
 
 public:
 	CPlayer(string pieceName, int playerNum);
+	string GetPlayerName();
+	
+	int GetPlayerNum();
+	
+	void SetBalance(int ammount);
+	int GetBalance();
+	
+	void SetLocation(int loc);
+	int GetLocation();
+
 	~CPlayer();
 };
 
