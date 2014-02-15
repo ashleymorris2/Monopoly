@@ -14,10 +14,6 @@ using namespace std;
 
 const int ROUNDS = 20;
 
-
-//Takes the two strings and returns one string with a space
-
-
 // Returns a random number in the range 1 .. 6
 int Random()
 {
@@ -28,7 +24,14 @@ int _tmain(int argc, _TCHAR* argv[])
 {	
 
 	CMonopoly * monopoly = new CMonopoly();
+	
+	for(int i =0; i < ROUNDS; i++){
+	
+		monopoly->PlayRound();
 
+	}
+
+	system("pause");
 
 	return 0;
 }

@@ -10,15 +10,15 @@ using namespace std;
 class CPlayer
 {
 private:	
-	string pieceName;//The name of the players piece
-	int playerNum; //Unique number to identify the player
-	int currentBalance;//Players current balance
-	int location;//Players current location on the board
+	string mPieceName;//The name of the players piece
+	int mPlayerNum; //Unique number to identify the player
+	int mCurrentBalance;//Players current balance
+	int mLocation;//Players current location on the board
 
 public:
 	CPlayer(string pieceName, int playerNum);
-	string GetPlayerName();
 	
+	string GetPlayerName();
 	int GetPlayerNum();
 	
 	void SetBalance(int ammount);
@@ -26,6 +26,8 @@ public:
 	
 	void SetLocation(int loc);
 	int GetLocation();
+
+	void RollDice();
 
 	~CPlayer();
 };

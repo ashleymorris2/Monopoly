@@ -9,6 +9,7 @@
 
 using namespace std;
 
+//interface class for the monopoly board
 class CSquare
 {
 private:	
@@ -16,8 +17,8 @@ private:
 
 public:
 	CSquare (string posName);//Constructor
-	//virtual void TakeTurn(CPlayer * player);
 	string GetName();
+	virtual void CalculateTurn(CPlayer * player);
 };
 
 #endif

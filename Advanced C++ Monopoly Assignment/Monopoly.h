@@ -12,6 +12,7 @@
 
 const char PND = 156;
 string  myName (string  name1, string  name2);
+string  myName (string  name1, string  name2, string name3);
 
 class CMonopoly 
 {

@@ -31,6 +31,9 @@
     <Filter Include="Source Files\Monopoly">
       <UniqueIdentifier>{0ad7a646-4802-44b5-a7f3-fe35dcd33c7e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Square\Special">
+      <UniqueIdentifier>{224f641a-4b05-4e93-abde-31353372dbb3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -53,6 +56,12 @@
     </ClInclude>
     <ClInclude Include="Monopoly.h">
       <Filter>Header Files\Monopoly</Filter>
+    </ClInclude>
+    <ClInclude Include="Airport.h">
+      <Filter>Header Files\Square</Filter>
+    </ClInclude>
+    <ClInclude Include="Special.h">
+      <Filter>Header Files\Square\Special</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

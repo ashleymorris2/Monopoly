@@ -4,13 +4,23 @@
 
 CPlayer::CPlayer(string pieceName, int playerNum){
 
-	this->pieceName = pieceName;
-	this->playerNum = playerNum;
-	this->currentBalance = 1500;
-	this->location = 0;
+	this->mPieceName = pieceName;
+	this->mPlayerNum = playerNum;
+	this->mCurrentBalance = 1500;
+	this->mLocation = 0;
 }
 string CPlayer::GetPlayerName(){
 
-	return pieceName;
+	return mPieceName;
+
+}
+int CPlayer::GetLocation(){
+
+	return mLocation;
+
+}
+void CPlayer::RollDice(){
+
+
 
 }
