@@ -6,11 +6,19 @@
 #include <vector>
 #include <fstream>
 
-#include "Square.h"
 #include "Player.h"
-#include "Property.h"
 
-const char PND = 156;
+#include "Square.h"
+#include "Property.h"
+#include "Airport.h"
+
+#include "Go.h"
+#include "Jail.h"
+#include "Bonus.h"
+#include "FreeParking.h"
+#include "GoToJail.h"
+#include "Penalty.h"
+
 string  myName (string  name1, string  name2);
 string  myName (string  name1, string  name2, string name3);
 
@@ -18,8 +26,7 @@ class CMonopoly
 {
 private:
 	vector <CSquare*> theBoard;
-	CPlayer * player1;
-	CPlayer * player2;
+	CPlayer * player[2];
 	
 public:
 	CMonopoly();

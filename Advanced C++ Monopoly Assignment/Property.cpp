@@ -9,9 +9,8 @@ CProperty::CProperty(string posName, int cost, int rent, int colourGroup) : CSqu
 	this->mRent = rent;
 	this->mColourGroup = colourGroup;
 	
-	this->mOwner = 0;
+	this->mOwner = -1;
 }
-
 int CProperty::GetRent(){
 
 	return mRent;
@@ -26,9 +25,8 @@ int CProperty::GetColourGroup(){
 
 	return mColourGroup;
 }
-void CProperty::CalculateTurn(CPlayer * player){
-
-	cout << player->GetPlayerName() <<" lands on " << this->GetName() <<endl; 
+void CProperty::CalculateTurn(CPlayer * player[], int playerNum){
 	
+	cout << player[playerNum]->GetPlayerName() <<" lands on " << this->GetName() <<endl; 
 	
 }

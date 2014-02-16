@@ -34,6 +34,9 @@
     <Filter Include="Header Files\Square\Special">
       <UniqueIdentifier>{224f641a-4b05-4e93-abde-31353372dbb3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Square\Special">
+      <UniqueIdentifier>{a5b14c53-678f-4416-95b7-d14ee38793ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -60,7 +63,25 @@
     <ClInclude Include="Airport.h">
       <Filter>Header Files\Square</Filter>
     </ClInclude>
+    <ClInclude Include="Go.h">
+      <Filter>Header Files\Square\Special</Filter>
+    </ClInclude>
+    <ClInclude Include="Penalty.h">
+      <Filter>Header Files\Square\Special</Filter>
+    </ClInclude>
     <ClInclude Include="Special.h">
+      <Filter>Header Files\Square</Filter>
+    </ClInclude>
+    <ClInclude Include="Jail.h">
+      <Filter>Header Files\Square\Special</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeParking.h">
+      <Filter>Header Files\Square\Special</Filter>
+    </ClInclude>
+    <ClInclude Include="GoToJail.h">
+      <Filter>Header Files\Square\Special</Filter>
+    </ClInclude>
+    <ClInclude Include="Bonus.h">
       <Filter>Header Files\Square\Special</Filter>
     </ClInclude>
   </ItemGroup>
@@ -74,14 +95,32 @@
     <ClCompile Include="Player.cpp">
       <Filter>Source Files\Player</Filter>
     </ClCompile>
-    <ClCompile Include="Advanced C++ Monopoly Assignment.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Monopoly.cpp">
       <Filter>Source Files\Monopoly</Filter>
     </ClCompile>
     <ClCompile Include="Property.cpp">
       <Filter>Source Files\Square</Filter>
+    </ClCompile>
+    <ClCompile Include="Airport.cpp">
+      <Filter>Source Files\Square</Filter>
+    </ClCompile>
+    <ClCompile Include="Special.cpp">
+      <Filter>Source Files\Square\Special</Filter>
+    </ClCompile>
+    <ClCompile Include="Go.cpp">
+      <Filter>Source Files\Square\Special</Filter>
+    </ClCompile>
+    <ClCompile Include="Jail.cpp">
+      <Filter>Source Files\Square\Special</Filter>
+    </ClCompile>
+    <ClCompile Include="GoToJail.cpp">
+      <Filter>Source Files\Square\Special</Filter>
+    </ClCompile>
+    <ClCompile Include="Advanced C++ Monopoly Assignment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeParking.cpp">
+      <Filter>Source Files\Square\Special</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

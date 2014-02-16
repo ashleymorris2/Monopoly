@@ -81,7 +81,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Airport.h" />
+    <ClInclude Include="Bonus.h" />
+    <ClInclude Include="FreeParking.h" />
+    <ClInclude Include="Go.h" />
+    <ClInclude Include="GoToJail.h" />
+    <ClInclude Include="Jail.h" />
     <ClInclude Include="Monopoly.h" />
+    <ClInclude Include="Penalty.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Property.h" />
     <ClInclude Include="Special.h" />
@@ -94,9 +100,15 @@
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="Airport.cpp" />
+    <ClCompile Include="FreeParking.cpp" />
+    <ClCompile Include="Go.cpp" />
+    <ClCompile Include="GoToJail.cpp" />
+    <ClCompile Include="Jail.cpp" />
     <ClCompile Include="Monopoly.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Property.cpp" />
+    <ClCompile Include="Special.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

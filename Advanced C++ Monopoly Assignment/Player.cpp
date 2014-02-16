@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "Player.h"
 
-
 CPlayer::CPlayer(string pieceName, int playerNum){
 
 	this->mPieceName = pieceName;
@@ -19,8 +18,36 @@ int CPlayer::GetLocation(){
 	return mLocation;
 
 }
+void CPlayer::AddBalance(int amount){
+
+	mCurrentBalance = mCurrentBalance + amount;
+
+}
+void CPlayer::SubBalance(int amount){
+
+	mCurrentBalance = mCurrentBalance - amount;
+
+}
+int CPlayer::GetBalance(){
+
+	return mCurrentBalance;
+}
+void CPlayer::SetLocation(int loc){
+
+	this->mLocation = loc;
+
+}
 void CPlayer::RollDice(){
 
+	int playerRoll = 0;
+	playerRoll = Random();
 
+	cout << mPieceName <<" rolls " << playerRoll <<endl;
 
+	if(mLocation <= 20){
+	mLocation = mLocation + playerRoll;
+	}
+}
+int Random(){
+	return static_cast<int>( static_cast<double> (rand()) / (RAND_MAX + 1) * 6.0f + 1 );
 }

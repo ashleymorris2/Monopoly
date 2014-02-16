@@ -7,16 +7,11 @@
 #include "Player.h"
 
 class CSpecial :public CSquare
-{
-private:
-	//int mOwner; // 0 if not owned
+{	
 
 public:
 	CSpecial(string posName);
-
-	virtual void CalculateTurn(CPlayer * player);
-	int GetOwner();
-	
+	virtual void CalculateTurn(CPlayer * player[], int playerNum)=0;
 };
 
 #endif

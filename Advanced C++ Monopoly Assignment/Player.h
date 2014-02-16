@@ -7,6 +7,8 @@
 
 using namespace std;
 
+int Random();
+
 class CPlayer
 {
 private:	
@@ -21,11 +23,12 @@ public:
 	string GetPlayerName();
 	int GetPlayerNum();
 	
-	void SetBalance(int ammount);
 	int GetBalance();
+	void AddBalance(int ammount);
+	void SubBalance(int ammount);
 	
-	void SetLocation(int loc);
 	int GetLocation();
+	void SetLocation(int loc);
 
 	void RollDice();
 

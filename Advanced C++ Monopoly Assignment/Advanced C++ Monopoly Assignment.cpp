@@ -14,24 +14,18 @@ using namespace std;
 
 const int ROUNDS = 20;
 
-// Returns a random number in the range 1 .. 6
-int Random()
-{
-	return static_cast<int>( static_cast<double> (rand()) / (RAND_MAX + 1) * 6.0f + 1 );
-}
-
 int _tmain(int argc, _TCHAR* argv[])
 {	
 
 	CMonopoly * monopoly = new CMonopoly();
 	
-	for(int i =0; i < ROUNDS; i++){
-	
+	for(int i = 0; i < ROUNDS; i++){
 		monopoly->PlayRound();
-
 	}
 
 	system("pause");
+
+	delete monopoly;
 
 	return 0;
 }
