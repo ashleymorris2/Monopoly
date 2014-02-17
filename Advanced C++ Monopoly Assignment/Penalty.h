@@ -10,10 +10,11 @@
 
 class CPenalty :public CSpecial
 {	
-
 public:
 	CPenalty(string posName);
 	virtual void CalculateTurn(CPlayer * player[], int playerNum);
+
+	~CPenalty();
 };
 
 #endif

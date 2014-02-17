@@ -10,10 +10,11 @@
 
 class CFreeParking :public CSpecial
 {
-
 public:
 	CFreeParking(string posName);
 	virtual void CalculateTurn(CPlayer * player[], int playerNum);
+
+	~CFreeParking();
 };
 
 #endif

@@ -14,6 +14,9 @@ using namespace std;
 
 const int ROUNDS = 20;
 
+#define _CRTDBG_MAP_ALLOC
+#include <crtdbg.h>
+
 int _tmain(int argc, _TCHAR* argv[])
 {	
 
@@ -25,7 +28,9 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	system("pause");
 
-	delete monopoly;
+	delete (monopoly);
+
+	_CrtDumpMemoryLeaks();
 
 	return 0;
 }

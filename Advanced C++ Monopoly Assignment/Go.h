@@ -10,10 +10,11 @@
 
 class CGo :public CSpecial
 {
-
 public:
 	CGo(string posName);
 	virtual void CalculateTurn(CPlayer * player[], int playerNum);
+
+	~CGo();
 };
 
 #endif

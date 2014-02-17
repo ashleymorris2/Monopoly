@@ -13,3 +13,6 @@ void CFreeParking::CalculateTurn(CPlayer * player[], int playerNum){
 
 	
 }
+CFreeParking::~CFreeParking(){
+
+}

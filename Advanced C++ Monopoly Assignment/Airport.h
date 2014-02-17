@@ -11,13 +11,13 @@ class CAirport :public CSquare
 private:
 	string mPosName;
 	int mOwner; // 0 if not owned
-
 public:
-
 	CAirport(string posName);	
 	virtual void CalculateTurn(CPlayer * player[], int playerNum);
 
 	int GetOwner();	
+
+	~CAirport();
 };
 
 #endif

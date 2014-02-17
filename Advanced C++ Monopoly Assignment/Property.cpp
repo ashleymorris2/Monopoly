@@ -30,3 +30,8 @@ void CProperty::CalculateTurn(CPlayer * player[], int playerNum){
 	cout << player[playerNum]->GetPlayerName() <<" lands on " << this->GetName() <<endl; 
 	
 }
+CProperty::~CProperty(){
+
+
+
+}

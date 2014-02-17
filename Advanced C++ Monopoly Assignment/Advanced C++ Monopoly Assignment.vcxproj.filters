@@ -48,9 +48,6 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Square.h">
-      <Filter>Header Files\Square</Filter>
-    </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>Header Files\Player</Filter>
     </ClInclude>
@@ -83,6 +80,12 @@
     </ClInclude>
     <ClInclude Include="Bonus.h">
       <Filter>Header Files\Square\Special</Filter>
+    </ClInclude>
+    <ClInclude Include="MyDefinitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Square.h">
+      <Filter>Header Files\Square</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +123,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FreeParking.cpp">
+      <Filter>Source Files\Square\Special</Filter>
+    </ClCompile>
+    <ClCompile Include="MyDefinitions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bonus.cpp">
+      <Filter>Source Files\Square\Special</Filter>
+    </ClCompile>
+    <ClCompile Include="Penalty.cpp">
       <Filter>Source Files\Square\Special</Filter>
     </ClCompile>
   </ItemGroup>

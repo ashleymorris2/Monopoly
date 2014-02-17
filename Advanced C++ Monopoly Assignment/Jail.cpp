@@ -13,3 +13,7 @@ void CJail::CalculateTurn(CPlayer * player[], int playerNum){
 	cout << player[playerNum]->GetPlayerName() <<" is just visiting" <<endl;
 		
 }
+CJail::~CJail(){
+
+
+}

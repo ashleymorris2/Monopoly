@@ -16,3 +16,8 @@ void CSquare::CalculateTurn(CPlayer * player[], int playerNum){
 	//abstract class
 
 }
+CSquare::~CSquare(){
+
+
+
+}

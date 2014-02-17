@@ -10,10 +10,11 @@
 
 class CBonus :public CSpecial
 {
-
 public:
 	CBonus(string posName);
 	virtual void CalculateTurn(CPlayer * player[], int playerNum);
+
+	~CBonus();
 };
 
 #endif

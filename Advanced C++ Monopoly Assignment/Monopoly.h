@@ -11,6 +11,7 @@
 #include "Square.h"
 #include "Property.h"
 #include "Airport.h"
+#include "MyDefinitions.h"
 
 #include "Go.h"
 #include "Jail.h"

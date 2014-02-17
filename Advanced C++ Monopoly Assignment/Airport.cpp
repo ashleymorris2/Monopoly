@@ -33,3 +33,7 @@ void CAirport::CalculateTurn(CPlayer * player[], int playerNum){
 	}
 	
 }
+CAirport::~CAirport(){
+
+
+}

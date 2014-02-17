@@ -14,3 +14,7 @@ void CGoToJail::CalculateTurn(CPlayer * player[], int playerNum){
 	player[playerNum]->SubBalance(50);
 	player[playerNum]->SetLocation(6);	
 }
+CGoToJail::~CGoToJail(){
+
+
+}

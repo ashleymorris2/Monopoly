@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "Player.h"
+#include "MyDefinitions.h"
 
 CPlayer::CPlayer(string pieceName, int playerNum){
 
@@ -48,6 +49,8 @@ void CPlayer::RollDice(){
 	mLocation = mLocation + playerRoll;
 	}
 }
-int Random(){
-	return static_cast<int>( static_cast<double> (rand()) / (RAND_MAX + 1) * 6.0f + 1 );
+CPlayer::~CPlayer(){
+
+
+
 }

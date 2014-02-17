@@ -87,6 +87,7 @@
     <ClInclude Include="GoToJail.h" />
     <ClInclude Include="Jail.h" />
     <ClInclude Include="Monopoly.h" />
+    <ClInclude Include="MyDefinitions.h" />
     <ClInclude Include="Penalty.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Property.h" />
@@ -101,11 +102,14 @@
       </AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="Airport.cpp" />
+    <ClCompile Include="Bonus.cpp" />
     <ClCompile Include="FreeParking.cpp" />
     <ClCompile Include="Go.cpp" />
     <ClCompile Include="GoToJail.cpp" />
     <ClCompile Include="Jail.cpp" />
     <ClCompile Include="Monopoly.cpp" />
+    <ClCompile Include="MyDefinitions.cpp" />
+    <ClCompile Include="Penalty.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Property.cpp" />
     <ClCompile Include="Special.cpp" />

@@ -13,3 +13,7 @@ void CGo::CalculateTurn(CPlayer * player[], int playerNum){
 	player[playerNum]->AddBalance(200);
 	
 }
+CGo::~CGo(){
+
+
+}

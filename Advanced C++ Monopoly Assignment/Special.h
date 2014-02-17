@@ -12,6 +12,7 @@ class CSpecial :public CSquare
 public:
 	CSpecial(string posName);
 	virtual void CalculateTurn(CPlayer * player[], int playerNum)=0;
+~CSpecial();
 };
 
 #endif

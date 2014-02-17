@@ -22,6 +22,8 @@ public:
 	int GetRent();
 	int GetColourGroup();
 	int GetOwner();	
+
+	~CProperty();
 };
 
 #endif
