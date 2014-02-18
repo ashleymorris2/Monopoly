@@ -11,7 +11,6 @@ void CFreeParking::CalculateTurn(CPlayer * player[], int playerNum){
 	cout << player[playerNum]->GetPlayerName() <<" lands on " << this->GetName() <<endl; 
 	cout << player[playerNum]->GetPlayerName() <<" is resting" <<endl;
 
-	
 }
 CFreeParking::~CFreeParking(){
 

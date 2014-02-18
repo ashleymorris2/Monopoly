@@ -41,13 +41,29 @@ void CPlayer::SetLocation(int loc){
 void CPlayer::RollDice(){
 
 	int playerRoll = 0;
+	int previousLoc = 0;
+
 	playerRoll = Random();
+	int counter = 0;
 
 	cout << mPieceName <<" rolls " << playerRoll <<endl;
+	previousLoc = mLocation;
 
-	if(mLocation <= 20){
-	mLocation = mLocation + playerRoll;
+	while (mLocation < previousLoc + playerRoll)
+	{
+		mLocation++;	
+		
+		if (mLocation == 26){
+			playerRoll = playerRoll - counter;
+			mLocation = 0; 
+			previousLoc = -1;
+			AddBalance(200);
+			cout << mPieceName <<" passes GO and collects " << POUND <<"200"<<endl;
+			
+		}
+		counter ++;	
 	}
+			
 }
 CPlayer::~CPlayer(){
 

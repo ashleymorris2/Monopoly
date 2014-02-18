@@ -42,9 +42,6 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -87,6 +84,9 @@
     <ClInclude Include="Square.h">
       <Filter>Header Files\Square</Filter>
     </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -94,12 +94,6 @@
     </ClCompile>
     <ClCompile Include="Square.cpp">
       <Filter>Source Files\Square</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Source Files\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="Monopoly.cpp">
-      <Filter>Source Files\Monopoly</Filter>
     </ClCompile>
     <ClCompile Include="Property.cpp">
       <Filter>Source Files\Square</Filter>
@@ -133,6 +127,12 @@
     </ClCompile>
     <ClCompile Include="Penalty.cpp">
       <Filter>Source Files\Square\Special</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Monopoly.cpp">
+      <Filter>Source Files\Monopoly</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

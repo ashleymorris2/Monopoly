@@ -12,20 +12,16 @@ using namespace std;
 #include "Property.h"
 #include "Monopoly.h"
 
-const int ROUNDS = 20;
 
 #define _CRTDBG_MAP_ALLOC
 #include <crtdbg.h>
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
-
 	CMonopoly * monopoly = new CMonopoly();
 	
-	for(int i = 0; i < ROUNDS; i++){
-		monopoly->PlayRound();
-	}
-
+	monopoly->PlayRound();
+	
 	system("pause");
 
 	delete (monopoly);

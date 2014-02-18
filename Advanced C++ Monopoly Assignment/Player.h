@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int Random();
+//int Random();
 
 class CPlayer
 {

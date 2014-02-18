@@ -30,67 +30,76 @@ CMonopoly::CMonopoly(){
 		i++;
 
 		if(i==3){
-		CBonus * tmp;
-		inp >> name;//bonus
-		tmp = new CBonus(name);	
-		theBoard.push_back( tmp );
-		i++;
+			CBonus * tmp;
+			inp >> name;//bonus
+			tmp = new CBonus(name);	
+			theBoard.push_back( tmp );
+			i++;
 		}
 		if(i==6){
-		CJail * tmp;
-		inp >> name;//jail
-		tmp = new CJail(name);	
-		theBoard.push_back( tmp );
-		i++;
+			CJail * tmp;
+			inp >> name;//jail
+			tmp = new CJail(name);	
+			theBoard.push_back( tmp );
+			i++;
 		}
 		if(i==9||i ==23){		
-		CAirport * tmp;
-		inp >> name >> name2;//airports
-		tmp = new CAirport(myName(name,name2));	
-		theBoard.push_back( tmp );
-		i++;
+			CAirport * tmp;
+			inp >> name >> name2;//airports
+			tmp = new CAirport(myName(name,name2));	
+			theBoard.push_back( tmp );
+			i++;
 		}
 		if(i==13){
-		CFreeParking * tmp;
-		inp >> name >> name2;//free parking
-		tmp = new CFreeParking(myName(name,name2));	
-		theBoard.push_back( tmp );
-		i++;
+			CFreeParking * tmp;
+			inp >> name >> name2;//free parking
+			tmp = new CFreeParking(myName(name,name2));	
+			theBoard.push_back( tmp );
+			i++;
 		}
 		if(i==16){
-		CPenalty * tmp;
-		inp >> name;//penalty
-		tmp = new CPenalty(name);	
-		theBoard.push_back( tmp );
-		i++;
+			CPenalty * tmp;
+			inp >> name;//penalty
+			tmp = new CPenalty(name);	
+			theBoard.push_back( tmp );
+			i++;
 		}
 		if(i==19){//go to jail
-		CGoToJail * tmp;
-		inp >> name >> name2 >> name3;		
-		tmp = new CGoToJail(myName(name,name2,name3));	
- 		theBoard.push_back( tmp );
-		i++;
+			CGoToJail * tmp;
+			inp >> name >> name2 >> name3;		
+			tmp = new CGoToJail(myName(name,name2,name3));	
+ 			theBoard.push_back( tmp );
+			i++;
 		}
-
 	}
+
 	inp.close();
 
 	cout << "Welcome to Monopoly" << endl;
 	cout << endl;
-	
-	delete (tmp);
 
+	tmp = NULL;
+	delete(tmp);
+	
 }
 void CMonopoly::PlayRound(){
 
 	srand(3);//seed
 	
-	player[0]->RollDice();
-	theBoard[player[0]->GetLocation()]->CalculateTurn(player, 0);//the board at the players current location.. calculate their turn.
+	for(int i = 0; i < ROUNDS; i++){
 
-	player[1]->RollDice();
-	theBoard[player[1]->GetLocation()]->CalculateTurn(player, 1);
+		player[0]->RollDice();
+		theBoard[player[0]->GetLocation()]->CalculateTurn(player, 0);//the board at the players current location.. calculate their turn.
+		cout << player[0]->GetPlayerName() <<" has " << POUND<< player[0]->GetBalance() << endl;
+	
+		cout <<endl;
 
+		player[1]->RollDice();
+		theBoard[player[1]->GetLocation()]->CalculateTurn(player, 1);
+		cout << player[1]->GetPlayerName() <<" has " << POUND<< player[1]->GetBalance() << endl;
+
+		cout <<endl;
+	}
 }
 CMonopoly::~CMonopoly(){
 	 
@@ -98,13 +107,14 @@ CMonopoly::~CMonopoly(){
 	{
 		delete (player[i]);
 	}
-	
-	while(!theBoard.empty()) delete theBoard.back(), theBoard.pop_back();
 
-
+	for (int i = 0; i < 26; i ++)
+	{
+		delete (theBoard[i]);
+	}
 	
+	//while(!theBoard.empty()) delete theBoard.back(), theBoard.pop_back();	
 } 
-
 //Takes the two or three strings and returns one string.
  string  myName (string  name1, string  name2){
 	

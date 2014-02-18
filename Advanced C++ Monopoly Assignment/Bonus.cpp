@@ -12,8 +12,7 @@ void CBonus::CalculateTurn(CPlayer * player[], int playerNum){
 	int randomEvent = 0;
 	
 	cout << player[playerNum]->GetPlayerName() <<" lands on " << this->GetName() <<endl; 
-	cout << endl;
-
+	
 	randomEvent = Random();
 
 	switch (randomEvent)
@@ -44,8 +43,8 @@ void CBonus::CalculateTurn(CPlayer * player[], int playerNum){
 		break;
 	}
 
-	cout <<player[playerNum]->GetPlayerName() <<" has "<< player[playerNum]->GetBalance() <<endl;
-	cout <<endl;
+	//cout <<player[playerNum]->GetPlayerName() <<" has " <<POUND<< player[playerNum]->GetBalance() <<endl;
+	//cout <<endl;
 }
 CBonus::~CBonus(){
 
