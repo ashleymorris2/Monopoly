@@ -4,10 +4,9 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
-
-//int Random();
 
 class CPlayer
 {
@@ -16,6 +15,7 @@ private:
 	int mPlayerNum; //Unique number to identify the player
 	int mCurrentBalance;//Players current balance
 	int mLocation;//Players current location on the board
+	vector <int> mColourGroupsOwned;//Stores the colour groups representing the players owned properties
 
 public:
 	CPlayer(string pieceName, int playerNum);
@@ -29,6 +29,9 @@ public:
 	
 	int GetLocation();
 	void SetLocation(int loc);
+
+	bool GetOwned(int colourGroup);
+	void SetOwned(int colourGroup);
 
 	void RollDice();
 

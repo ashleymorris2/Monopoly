@@ -74,32 +74,25 @@ CMonopoly::CMonopoly(){
 	}
 
 	inp.close();
+	tmp = NULL;
+	delete(tmp);
 
 	cout << "Welcome to Monopoly" << endl;
 	cout << endl;
-
-	tmp = NULL;
-	delete(tmp);
-	
 }
 void CMonopoly::PlayRound(){
-
-	srand(3);//seed
 	
 	for(int i = 0; i < ROUNDS; i++){
-
-		player[0]->RollDice();
-		theBoard[player[0]->GetLocation()]->CalculateTurn(player, 0);//the board at the players current location.. calculate their turn.
-		cout << player[0]->GetPlayerName() <<" has " << POUND<< player[0]->GetBalance() << endl;
-	
-		cout <<endl;
-
-		player[1]->RollDice();
-		theBoard[player[1]->GetLocation()]->CalculateTurn(player, 1);
-		cout << player[1]->GetPlayerName() <<" has " << POUND<< player[1]->GetBalance() << endl;
-
-		cout <<endl;
+		for (int j = 0; j < NUMPLAYERS; j++)
+		{
+			player[j]->RollDice();
+			theBoard[player[j]->GetLocation()]->CalculateTurn(player, j);//the board at the players current location.. calculate their turn.
+			cout << player[j]->GetPlayerName() <<" has " << POUND<< player[j]->GetBalance() << endl;
+			cout <<endl;
+		}
 	}
+
+	
 }
 CMonopoly::~CMonopoly(){
 	 
@@ -112,6 +105,7 @@ CMonopoly::~CMonopoly(){
 	{
 		delete (theBoard[i]);
 	}
+	theBoard.clear();
 	
 	//while(!theBoard.empty()) delete theBoard.back(), theBoard.pop_back();	
 } 

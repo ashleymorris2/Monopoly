@@ -18,12 +18,14 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+
 	CMonopoly * monopoly = new CMonopoly();
+
+	srand(3);//seed
 	
 	monopoly->PlayRound();
 	
 	system("pause");
-
 	delete (monopoly);
 
 	_CrtDumpMemoryLeaks();

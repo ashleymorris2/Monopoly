@@ -13,6 +13,8 @@
 #include "Airport.h"
 #include "MyDefinitions.h"
 
+#include "Special.h"
+
 #include "Go.h"
 #include "Jail.h"
 #include "Bonus.h"
@@ -27,8 +29,7 @@ class CMonopoly
 {
 private:
 	vector <CSquare*> theBoard;
-	CPlayer * player[2];
-	
+	CPlayer * player[2];	
 public:
 	CMonopoly();
 	void PlayRound();
